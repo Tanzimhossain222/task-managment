@@ -21,19 +21,12 @@ $ yarn run start
 # watch mode
 $ yarn run start:dev
 
-# production mode
-$ yarn run start:prod
 ```
 
-## Run tests
+## Docker Postgres
 
 ```bash
-# unit tests
-$ yarn run test
+# run postgres container
+docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
 
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
 ```
